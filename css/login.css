@@ -1,0 +1,166 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       flex-direction: column; 
+    }
+
+    .login-box {
+      background: #fff;
+      padding: 35px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 800px;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #16a085;
+    }
+
+    .login-box label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: #16a085;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .login-box button:hover {
+      background: #1abc9c;
+    }
+
+    .login-box .message {
+      color: red;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    .login-box .links {
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    .login-box .links a {
+      color: #16a085;
+      text-decoration: none;
+    }
+
+    .login-box .links a:hover {
+      text-decoration: underline;
+    }
+
+    .login-logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* espace pour l'icône à gauche */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input-container::before {
+  content: "👤"; /* icône utilisateur ou autre emoji */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+    .back-home-container {
+
+
+  text-align: center; 
+  margin-top: 20px;   
+    width: 300px;
+    padding: 20px;
+  
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.back-home {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #1abc9c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.back-home:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+}
+
+.back-home:active {
+  transform: translateY(0);
+}
+    @media (max-width: 600px) {
+      .login-box {
+        width: 90%;
+        padding: 20px;
+      }
+      .login-box h2 {
+        font-size: 1.5rem;
+      }
+      .login-box button {
+        font-size: 0.9rem;
+      }
+      .login-box input {
+        font-size: 0.9rem;
+      }
+      .login-box .links {
+        font-size: 0.8rem;
+      }
+      .back-home a {
+        font-size: 0.8rem;
+      }
+    }
+
+ 

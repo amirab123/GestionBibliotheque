@@ -1,0 +1,457 @@
+/* Styles généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+header {
+    background-color: #53cba7;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+/* Titres dans le header */
+header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header h3 {
+    margin: 5px 0 0 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+header h3 b {
+    color: #ffeb3b; /* Met le nom en jaune pour le mettre en valeur */
+}
+
+/* Lien de déconnexion */
+header h3 a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #f44336;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header h3 a:hover {
+    background-color: #d32f2f;
+}
+
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #22ce9d;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #8de1b4;
+}
+
+/* Ligne de séparation */
+header hr {
+    border: 0;
+    height: 1px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    opacity: 0.5;
+}
+
+/* Responsive : navigation sur mobile */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    header h3 {
+        font-size: 14px;
+    }
+}
+/* Titres */
+h1, h2 {
+    color: #137c5d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Conteneurs */
+.content-box, form, .menu {
+    max-width: 700px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #049d56;
+    color: white;
+}
+
+/* Formulaires */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+
+
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: #fefefe;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    
+}
+
+form input:focus,
+form select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Boutons */
+button, input[type="submit"] {
+     width: 100%;
+    margin-top: 25px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #1e8449;
+}
+
+/* Messages de succès ou erreur */
+p.success {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+p.error {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Liens */
+a.retour {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #aedb34;
+    font-weight: 600;
+}
+
+a.retour:hover {
+    text-decoration: underline;
+}
+
+/* Menu de navigation simple */
+.menu a {
+    display: block;
+    background-color: #29b97f;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    margin: 12px auto;
+    max-width: 200px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #1c5980;
+}
+
+/* Paragraphes généraux */
+p {
+    font-size: 1.2em;
+    color: #48d4a3;
+}
+
+
+.btn-retour {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #16a085;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.1s;
+  font-size: 0.95rem;
+}
+
+.btn-retour:hover {
+  background: #1abc9c;
+}
+
+.btn-retour:active {
+  transform: scale(0.97);
+}
+
+.btn-retour::before {
+  content: "⬅ ";
+}
+
+
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Bouton Modifier (bleu) */
+.btn-modifier {
+      background-color: #2196F3 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.btn-modifier:hover {
+    background-color: #0b7dda;
+    transform: scale(1.05);
+}
+
+
+.btn-supprimer {
+    background-color: #f44336!important;
+    color: white !important;
+    border: none !important;
+    
+}
+
+.btn-supprimer:hover {
+    background-color: #da190b;
+    transform: scale(1.05);
+}
+
+/* Optionnel : petit effet d'ombre */
+.btn-modifier, .btn-supprimer {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+  
+  .alert { padding: 10px; margin: 10px 0; border-radius: 5px; font-weight: bold; }
+        .alert-error { background-color: #fdd; color: #900; }
+        .alert-success { background-color: #dfd; color: #060; }
+
+
+        /* Bouton lien Ajouter */
+.btn-ajouter {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #27ae60; /* vert */
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 0.95rem;
+}
+
+.btn-ajouter:hover {
+    background-color: #1e8449;
+    transform: scale(1.05);
+}
+
+.btn-ajouter:active {
+    transform: scale(0.97);
+}
+.btn-ajouter::before {
+    content: "＋ ";
+}
+
+/* Style général des boutons */
+.btn-emprunt {
+     padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Bouton Accepter (vert) */
+
+.btn-cours {
+    background-color: #029c5f ;
+}
+.btn-cours:hover {
+    background-color: #a5f8c3;
+    transform: scale(1.05);
+}
+.btn-accepter {
+    background-color: #27ae60;
+}
+.btn-accepter:hover {
+    background-color: #1e8449;
+    transform: scale(1.05);
+}
+
+/* Bouton Refuser (rouge) */
+.btn-refuser {
+    background-color: #e74c3c;
+}
+.btn-refuser:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Bouton Terminer (bleu) */
+.btn-terminer {
+    background-color: #3498db;
+}
+.btn-terminer:hover {
+    background-color: #2e86c1;
+    transform: scale(1.05);
+}
+/* Footer général */
+footer {
+    background-color: #5fb99e; /* vert foncé */
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 0.95rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    margin-top: 40px;
+}
+/* Style bouton emprunter */
+.btn-emprunter {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;  /* vert */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-emprunter:hover {
+    background-color: #45a049; /* vert plus foncé */
+    transform: scale(1.05);
+}
+
+/* Liens dans le footer */
+footer a {
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #aedb34; /* vert clair au survol */
+}
+
+/* Petites notes ou copyright */
+footer p {
+    margin: 5px 0 0;
+    font-size: 0.85rem;
+    color: #e0f7ea;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.85rem;
+        padding: 15px 20px;
+    }
+}
+
+   .btn_custom {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: #fff;
+            background: #25ebac;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn_custom:hover {
+            background: #1eaf7f;
+        }

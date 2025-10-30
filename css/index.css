@@ -1,0 +1,186 @@
+ body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f2f2f2;
+             margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+         overflow: hidden; /* pas de scroll */
+        }
+          .intro {
+            background: rgba(0,0,0,0.5);
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 800px;
+            color: #fff;
+            border-radius: 12px;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #16a085;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: #fff;
+            background: #16a085;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #1abc9c;
+        }
+         .card {
+            background: rgba(255,255,255,0.1);
+            margin: 20px;
+            display: inline-block;
+            width: 250px;
+            height: auto;
+            border-radius: 12px;
+            padding: 25px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .card:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-bottom: 15px;
+        }
+        .card p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+
+
+/* ===== Footer ===== */
+footer {
+
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+/* Masquer toutes les slides par défaut */
+.mySlides {
+  display: none;
+}
+
+/* Image dans le slider */
+.mySlides img {
+  width: 100%;           /* pleine largeur du conteneur */
+  height: auto;          /* conserve les proportions */
+  vertical-align: middle;
+  border-radius: 10px;   /* coins légèrement arrondis */
+}
+
+/* Conteneur du slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Boutons précédent et suivant */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.3); /* léger fond */
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texte de légende */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3); /* lisibilité sur l'image */
+  border-radius: 0 0 10px 10px;
+}
+
+/* Numéro de slide */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Points indicateurs */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animation fade */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+/* Ajustements pour petits écrans */
+@media only screen and (max-width: 768px) {
+  .prev, .next {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .text {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .prev, .next, .text {
+    font-size: 11px;
+    padding: 10px;
+  }
+}
